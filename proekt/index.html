@@ -8,24 +8,30 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
+  
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- CSS here -->
+ 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <script type="text/javascript">
+        function FeedBack()
+        {
+            if(document.getElementById('message').value && document.getElementById('name').value && document.getElementById('email').value && document.getElementById('subject').value)
+            {
+                alert('Ваше сообщение отправлено!');
+            }
+            else
+            {
+                alert('Не все поля введены!');
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
+   
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
@@ -75,7 +81,9 @@
                                 <span>Меня зовут Саша</span></h3>
                         </div>
                     </div>
-                   
+                     <div class="my_img d-none d-lg-block">
+                        <img src="img/ttt.png" alt="">
+                    </div>   
                 </div>
             </div>
         </div>
@@ -159,7 +167,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section_btn text-right">
-                        <a href="#" class="btn_2">Хочу заказать</a>
+                        <a href="#meeee" class="btn_2">Хочу заказать</a>
                     </div>
                 </div>
             </div>
@@ -300,7 +308,7 @@
             <div class="row">
                 <div class="col-xl-10">
                     <div class="download_text">
-                        <h3 id="meeee">Напишите нам!</h3>
+                        <h3 id="meeee">Обратная связь</h3>
                     </div>
                 </div>
             </div>
